@@ -1,0 +1,23 @@
+main { 
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+  }
+}
+
+.body { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "main aside";
+    flex: 1;
+
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "main"
+            "aside";
+    }
+}
