@@ -1,9 +1,10 @@
 import { HeaderContainer } from "./styles.js";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo2.png"
 
 
 
-const Header = ({ title }) => {
+const Header = () => {
 
     const navLinks = [
         { label: 'Home', path: '/' },
@@ -14,7 +15,7 @@ const Header = ({ title }) => {
 
     return (
         <HeaderContainer>
-            <h1>{title}</h1>
+            <img src={logo}/>
             <nav>
                 <ul>
                     {navLinks.map((link, index) => (

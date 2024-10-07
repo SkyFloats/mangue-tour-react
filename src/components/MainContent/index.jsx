@@ -1,9 +1,13 @@
 import { MainContentContainer } from "./styles.js";
 
-const MainContent = ({ content }) => {
+const MainContent = ({ title, content }) => {
     return (
         <MainContentContainer>
-            <p>{content}</p>
+            <div>
+                <h2>{title}</h2>
+                <p>{content}</p>
+            </div>
+
         </MainContentContainer>
     );
 };

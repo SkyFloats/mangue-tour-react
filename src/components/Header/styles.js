@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    background-color: #F1F1F1;
+    background-color: #2D4DAD;
     text-align: center;
     padding: 20px;
     width: 100%;
