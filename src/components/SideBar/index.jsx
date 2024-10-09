@@ -1,13 +1,26 @@
 import { SideBarContainer } from "./styles.js";
+import { Link } from "react-router-dom";
 
-const SideBar = ({ sidebarContent }) => {
+const SideBar = () => {
+
+    
+    const navLinks = [
+        { label: 'Página Inicial', path: '/' },
+        { label: 'Lista de Rotas', path: '/list' },
+        { label: 'Cadastrar Rotas', path: '/form' },
+    ];
+
     return (
         <SideBarContainer>
-            <ul>
-                {sidebarContent.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
+            <nav>
+                <ul>
+                    {navLinks.map((link, index) => (
+                        <li key={index}>
+                            <Link to={link.path}>{link.label}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
         </SideBarContainer>
     );
 };

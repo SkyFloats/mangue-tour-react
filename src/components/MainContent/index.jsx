@@ -4,10 +4,9 @@ const MainContent = ({ title, content }) => {
     return (
         <MainContentContainer>
             <div>
-                <h2>{title}</h2>
+                <h1>{title}</h1>
                 <p>{content}</p>
             </div>
-
         </MainContentContainer>
     );
 };

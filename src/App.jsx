@@ -8,11 +8,11 @@ import { PageContainer } from './pages/Container/styles';
 
 const App = () => {
     return (
-        <PageContainer>
+        <PageContainer className='abc'>
             <Header title="Mangue Tour" />
             <div className='body'>
                 <Outlet />
-                <SideBar sidebarContent={['Link 1', 'Link 2', 'Link 3']}></SideBar>
+                <SideBar/>
             </div>
             <Footer footerText="©Copyright 2024 by Mangue Tour. All rights reversed."></Footer>
         </PageContainer>

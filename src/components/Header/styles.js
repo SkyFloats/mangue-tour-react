@@ -5,21 +5,12 @@ export const HeaderContainer = styled.header`
     text-align: center;
     padding: 20px;
     width: 100%;
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style:none;
-    }
+        @media screen and (max-width: 600px) {
+            position: fixed;
+            top:0;
+            img {
+                max-height: 60px;
+            }
+        }
 
 `
-/*      a {
-        text-decoration: none;
-        color: white;
-        background: purple;
-        border-radius: 8px;
-        padding: 14px 20px;
-    }
-    a:hover {
-        background-color: lightblue;
-        color: black;
-}*/
